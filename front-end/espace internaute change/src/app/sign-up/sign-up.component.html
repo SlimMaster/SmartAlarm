@@ -1,0 +1,39 @@
+<div style="margin-top:30px;">
+</div>
+
+<div class="container">
+<div class="panel panel-default" id="custom">
+  <div class="panel-heading">Inscription</div>
+  <div class="panel-body">
+
+
+<br>
+    <form>
+       <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.nom" name="nom"  placeholder=" Nom" #nom="ngModel" required ></md-input>
+       </p>
+      <p>
+         <md-input class="demo-full-width" name="prenom" [(ngModel)]="model.prenom"   placeholder=" Prénom" #prenom="ngModel" required ></md-input>
+      </p>
+
+      <br>
+      <p>
+        <md-input class="demo-full-width" [(ngModel)]="model.username" name="username"  placeholder=" Username" #username="ngModel" required ></md-input>
+      </p>
+      <p>
+
+
+        <md-input class="demo-full-width"  name="email" [(ngModel)]="model.email" placeholder="Adresse mail@" #email="ngModel" required ></md-input>
+      </p>
+      <p>
+        <md-input class="demo-full-width" type="password" name="password" [(ngModel)]="model.password" placeholder="Mot de passe " #password="ngModel" required ></md-input>
+      </p>
+      <br>
+
+      <br><br>
+      <button md-raised-button color="primary"  (click)="register()" >Confirmer</button>
+      <br><br>
+    </form>
+  </div>
+</div>
+</div>

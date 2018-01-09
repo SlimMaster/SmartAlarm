@@ -1,0 +1,285 @@
+<div class="well"><p>Espace de contôle</p></div>
+
+
+<md-tab-group>
+  <md-tab>
+    <template md-tab-label>Historiques & Notifications</template>
+    <template md-tab-content>
+      <br><br>
+      <button md-raised-button color="primary" style="float:right">Ajouter une Exception</button><br><br><br>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Liste des notifications</div>
+        <!--<div class="panel-body">
+          <ul class="list-group" *ngIf="notifications" >
+            <li class="list-group-item" *ngFor="let notification of notifications" >
+              <span style="float:right;" (click)='log()' class="glyphicon glyphicon-minus" ></span>
+              <h3>{{notification.titre}}</h3>
+              <p>{{notification.contenue}} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quod consequatur laborum non, ex porro, consequuntur dolor enim fuga odio similique ad laudantium quas beatae adipisci repudiandae quaerat ullam incidunt.</p>
+            </li>
+          </ul>
+        </div>-->
+        <div class="panel-body">
+          <ul class="list-group"  >
+            <li class="list-group-item"  >
+              <span style="float:right;" (click)='log()' class="glyphicon glyphicon-minus" ></span>
+              <div class="notice notice-success">
+                <strong>Accepté(e)</strong>
+                <table>
+                  <td>
+                    <h5>Identifiant : 5</h5>
+                    <h5>Date : 10/08/2017 23:45:01</h5>
+                  </td>
+                  <td> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle">
+
+                  </td>
+                  <button data-toggle="modal" data-target="#detailModal2" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-search"></span> Plus de détails
+                  </button>
+                </table>
+
+
+
+
+              </div>
+            </li>
+            <li class="list-group-item"  >
+              <span style="float:right;" (click)='log()' class="glyphicon glyphicon-minus" ></span>
+              <div class="notice notice-success">
+                <strong>Accepté(e)</strong>
+                <table>
+                  <td>
+                    <h5>Identifiant : 4</h5>
+                    <h5>Date : 10/08/2017 23:40:49</h5>
+                  </td>
+                  <td> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle">
+
+                  </td>
+                  <button data-toggle="modal" data-target="#detailModal2" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-search"></span> Plus de détails
+                  </button>
+                </table>
+
+              </div>
+            </li>
+            <li class="list-group-item"  >
+              <span style="float:right;" (click)='log()' class="glyphicon glyphicon-minus" ></span>
+              <div class="notice notice-danger">
+                <strong>Refusé(e)</strong>
+                <table>
+                  <td>
+                    <h5>Identifiant : Non identifié(e)</h5>
+                    <h5>Date : 10/08/2017 23:22:20</h5>
+                  </td>
+                  <td> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle">
+
+                  </td>
+                  <button data-toggle="modal" data-target="#detailModal" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-search"></span> Plus de détails
+                  </button>
+                </table>
+
+              </div>
+            </li>
+
+            <li class="list-group-item"  >
+              <span style="float:right;" (click)='log()' class="glyphicon glyphicon-minus" ></span>
+              <div class="notice notice-warning">
+                <strong>Accepté(e) avec mon accord</strong>
+                <table>
+                  <td>
+                    <h5>Identifiant : Non identifié(e)</h5>
+                    <h5>Date : 10/08/2017 23:19:04</h5>
+                  </td>
+                  <td> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle">
+
+                  </td>
+                </table>
+              </div>
+            </li>
+            <li class="list-group-item"  >
+              <span style="float:right;" (click)='log()' class="glyphicon glyphicon-minus" ></span>
+              <div class="notice notice-danger">
+                <strong>Refusé(e)</strong>
+                <table>
+                  <td>
+                    <h5>Identifiant : Non identifié(e)</h5>
+                    <h5>Date : 10/08/2017 23:02:51</h5>
+                  </td>
+                  <td> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle">
+
+                  </td>
+                  <button data-toggle="modal" data-target="#detailModal" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-search"></span> Plus de détails
+                  </button>
+                </table>
+              </div>
+            </li>
+            <li class="list-group-item"  >
+              <span style="float:right;" (click)='log()' class="glyphicon glyphicon-minus" ></span>
+              <div class="notice notice-danger">
+                <strong>Refusé(e)</strong>
+                <table>
+                  <td>
+                    <h5>Identifiant : Non identifié(e)</h5>
+                    <h5>Date : 10/08/2017 23:01:22</h5>
+                  </td>
+                  <td> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle">
+
+                  </td>
+                  <button data-toggle="modal" data-target="#detailModal" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-search"></span> Plus de détails
+                  </button>
+                </table>
+              </div>
+            </li>
+            <li class="list-group-item"  >
+              <span style="float:right;" (click)='log()' class="glyphicon glyphicon-minus" ></span>
+              <div class="notice notice-danger">
+                <strong>Refusé(e)</strong>
+                <table>
+                  <td>
+                    <h5>Identifiant : Non identifié(e) </h5>
+                    <h5>Date : 10/08/2017 23:01:03</h5>
+                  </td>
+                  <td> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle">
+
+                  </td>
+                  <button data-toggle="modal" data-target="#detailModal" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-search"></span> Plus de détails
+                  </button>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="detailModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style=" background:#ff3333;
+    color:white;">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 class="modal-title">Détails sur la tentative d'accès</h4>
+            </div>
+            <div class="modal-body">
+              <p>Identifiant : 5</p>
+              <p>Nom : ssss</p>
+              <p>Prenom : ssss</p>
+              <p>Date d'accès : 29/07/2017 22:22:22</p>
+              <p>Statut : Refusé(e) </p>
+              <p>Détails : Non trouvée sur la base de données</p>
+              <p>Décision prise : Ne pas autoriser</p>
+              <p>Dispositif de notification : Smart Watch</p>
+
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="detailModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style=" background:#40ff00;
+    color:white;">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 class="modal-title">Détails sur la tentative d'accès</h4>
+            </div>
+            <div class="modal-body">
+              <p>Identifiant : 5</p>
+              <p>Nom : slim</p>
+              <p>Prenom : slim</p>
+              <p>Date d'accès : 17/07/2017 13:02:09</p>
+              <p>Statut : Accepté(e) </p>
+              <p>Détails : Autorisé(e) sur la base de données</p>
+              <p>Décision prise : --</p>
+              <p>Dispositif de notification : --</p>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </template>
+  </md-tab>
+  <md-tab>
+    <template md-tab-label>Personnes autorisées</template>
+    <template md-tab-content>
+      <br>
+      <div class="col-sm-9">
+      </div>
+      <div class="col-sm-3">
+
+        <a routerLink="add"><button md-raised-button color="primary">Autoriser une nouvelle personne</button></a>
+
+
+      </div>
+
+      <table class="table table-striped">
+
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th class="delete-column"></th>
+        </tr>
+        </thead>
+
+
+
+
+
+        <tbody *ngIf="personne_autorisee">
+        <tr *ngFor="let personne of personne_autorisee">
+          <td>{{personne.id}}</td>
+          <td><a [routerLink]="['edit', personne.id]">{{personne.nom}}</a></td>
+          <td><a [routerLink]="['edit', personne.id]">{{personne.prenom}}</a></td>
+
+
+          <td><button data-toggle="modal" data-target="#myModal"> <span class="glyphicon" style="color: red;" >&#xe014;</span> </button></td>
+
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style=" background:#ff3333;
+    color:white;">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title">Etes-vous sûr(e) de vouloir supprimer cette personne ?</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Attention ! Cette personne ne sera plus reconnue par le systeme SmartAlarm</p>
+                  <p>Continuer ?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-warning" data-dismiss="modal" (click)="delete(personne.id)">Supprimer</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal" >Annuler</button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </tr>
+        </tbody>
+      </table>
+      <div class="view-side-form">
+        <router-outlet></router-outlet>
+      </div>
+
+
+
+
+    </template>
+  </md-tab>
+</md-tab-group>
